@@ -9,6 +9,12 @@ README
 - Database creation: rake db:migrate 
 - Test suite: none yet
 
+### adding columns to Property model (remember todo's)
+- update property_params (in propertiesController)
+- update properties/_form partial
+- update index.html.erb and index.json.jbuilder
+- update show.html.erb and show.json.jbuilder
+
 ### Contributors
 
 * [jheg](https://github.com/jheg)

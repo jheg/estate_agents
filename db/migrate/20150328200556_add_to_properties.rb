@@ -1,5 +1,5 @@
 class AddToProperties < ActiveRecord::Migration
   def change
-    add_column :properties, :bedrooms, :integer
+    add_column :properties, :user_id, :integer
   end
 end

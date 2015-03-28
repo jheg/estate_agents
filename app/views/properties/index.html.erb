@@ -7,7 +7,8 @@
       <th>Bedrooms</th>
       <th>Price</th>
       <th>Status</th>
-      <th colspan="3"></th>
+      <th>Map URL</th>
+      <th colspan="5"></th>
     </tr>
   </thead>
 
@@ -18,6 +19,7 @@
         <td><%= property.bedrooms %></td>
         <td><%= property.price %></td>
         <td><%= property.status %></td>
+        <td><%= property.map_url %></td>
         <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
         <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
