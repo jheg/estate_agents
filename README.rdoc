@@ -1,0 +1,23 @@
+== README
+
+* Setup
+
+- Ruby version: 2.1.1
+- System dependencies: none so far
+- Configuration: none yet
+- Database creation: rake db:migrate 
+- Test suite: none yet
+
+* Contributors
+
+- <a href="https://github.com/jheg">jheg</a> 
+- <a href="https://github.com/RSMcFadyen">RSMcFadyen</a> 
+
+Estate Agents website for UK based estate agencies  
+
+* Features 
+
+- Todo
+
+
+
