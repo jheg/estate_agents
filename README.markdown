@@ -1,6 +1,19 @@
 README
 ======
 
+HOW TO CONTRIBUTE
+=================
+
+- On github navigate to https://github.com/jheg/estate_agents can click fork
+- From your resulting fork page click the clone icon to copy url to clipboard
+- In terminal from wherever your dev directory is: $ git clone [url_copied_from_fork]
+- Back on github from the orignal repo https://github.com/jheg/estate_agents copy the clone url
+- In terminal from the local repo (change to it from dev like this: $ cd estate_agents) type: $ git remote add upstream [url_you_copied_in_previous_step] - this will ensure that when you pull you will be pulling from the original repo which will keep you repo in sync
+- when you have made a change you can now add/commit/push and from github make a pull request
+
+
+
+
 ### Setup
 
 - Ruby version: 2.1.1
