@@ -5,9 +5,9 @@
   <%= @property.title %>
 </p>
 
-<p>
-  <strong>Bedrooms:</strong>
-  <%= @property.bedrooms %>
+<p> 
+  <strong>Address:</strong>
+  <%= @property.property_street + ' ' + @property.property_town %>
 </p>
 
 <p>
@@ -20,9 +20,75 @@
   <%= @property.status %>
 </p>
 
+<p> 
+  <strong>Description:</strong>
+  <%= @property.description %>
+</p>
+
+<p> 
+  <strong>Tenure:</strong>
+  <%= @property.tenure %>
+</p>
+
+<% if @property.tenure == 'LEASEHOLD' %>
+  <p> 
+    <strong>Remaining Lease:</strong>
+    <%= @property.remaining_lease %>
+  </p>
+
+  <p> 
+    <strong>Ground Rent:</strong>
+    <%= @property.ground_rent %>
+  </p>
+
+  <p> 
+    <strong>Service Charge:</strong>
+    <%= @property.service_charge %>
+  </p>
+<% end %>
+
 <p>
   <strong>Map URL:</strong>
   <%= @property.map_url %>
 </p>
+
+<p> 
+  <strong>Floorplan:</strong>
+  <%= @property.floorplan %>
+</p>
+
+
+<h3>Info:</h3>
+
+<p> 
+  <strong>Style:</strong>
+  <%= @property.property_style %>
+</p>
+
+<p>
+  <strong>Bedrooms:</strong>
+  <%= @property.bedrooms %>
+</p>
+
+<p> 
+  <strong>Featured Property?:</strong>
+  <%= @property.featured_property %>
+</p>
+
+<p> 
+  <strong>Council Tax Band:</strong>
+  <%= @property.council_tax_band %>
+</p>
+
+<p> 
+  <strong>Chain Free?</strong>
+  <%= @property.chain_free %>
+</p>
+
+
+
+
+
+
 <%= link_to 'Edit', edit_property_path(@property) %> |
 <%= link_to 'Back', properties_path %>

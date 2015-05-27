@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527160219) do
+ActiveRecord::Schema.define(version: 20150527160905) do
 
   create_table "properties", force: true do |t|
     t.string   "title"
@@ -21,6 +21,22 @@ ActiveRecord::Schema.define(version: 20150527160219) do
     t.datetime "updated_at"
     t.integer  "bedrooms"
     t.string   "map_url"
+    t.text     "description"
+    t.string   "floorplan"
+    t.boolean  "featured_property"
+    t.string   "tenure"
+    t.integer  "remaining_lease"
+    t.integer  "ground_rent"
+    t.integer  "service_charge"
+    t.string   "council_tax_band"
+    t.boolean  "chain_free"
+    t.string   "property_name_number"
+    t.string   "property_street"
+    t.string   "property_village"
+    t.string   "property_town"
+    t.string   "property_county"
+    t.string   "property_postcode"
+    t.string   "property_style"
   end
 
   create_table "team_members", force: true do |t|

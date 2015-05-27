@@ -16,6 +16,34 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
+    <%= f.label :property_name_number %><br>
+    <%= f.text_field :property_name_number %>
+  </div>
+  <div class="field">
+    <%= f.label :property_street %><br>
+    <%= f.text_field :property_street %>
+  </div>
+  <div class="field">
+    <%= f.label :property_village %><br>
+    <%= f.text_field :property_village %>
+  </div>
+  <div class="field">
+    <%= f.label :property_town %><br>
+    <%= f.text_field :property_town %>
+  </div>
+  <div class="field">
+    <%= f.label :property_county %><br>
+    <%= f.text_field :property_county %>
+  </div>
+  <div class="field">
+    <%= f.label :property_postcode %><br>
+    <%= f.text_field :property_postcode %>
+  </div>
+  <div class="field">
+    <%= f.label :property_style %><br>
+    <%= f.select :property_style, [['DETACHED', 'DETACHED'],['SEMI-DETACHED', 'SEMI-DETACHED'],['TERRACED', 'TERRACED'],['OTHER', 'OTHER']], {include_blank: true} %>
+  </div>
+  <div class="field">
     <%= f.label :bedrooms %><br>
     <%= f.text_field :bedrooms %>
   </div>
@@ -25,12 +53,50 @@
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <%= f.select :status, [['FOR SALE', 'FOR SALE'],['UNDER OFFER', 'UNDER OFFER'],['SSTC', 'SSTC'],['SOLD', 'SOLD']], {include_blank: true} %>
   </div>
   <div class="field">
     <%= f.label :map_url %><br>
     <%= f.text_field :map_url %>
   </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :floorplan %><br>
+    <%= f.text_field :floorplan %>
+  </div>
+  <div class="field">
+    <%= f.label :featured_property %><br>
+    <%= f.select :featured_property, [['YES', true],['NO', false]], {include_blank: true} %>
+  </div>
+  <div class="field">
+    <%= f.label :tenure %><br>
+    <%= f.select :tenure, [['FREEHOLD', 'FREEHOLD'],['LEASEHOLD', 'LEASEHOLD']], {include_blank: true} %>
+  </div>
+  <div class="field">
+    <%= f.label :remaining_lease %><br>
+    <%= f.text_field :remaining_lease %>
+  </div>
+  <div class="field">
+    <%= f.label :ground_rent %><br>
+    <%= f.text_field :ground_rent %>
+  </div>
+  <div class="field">
+    <%= f.label :service_charge %><br>
+    <%= f.text_field :service_charge %>
+  </div>
+  <div class="field">
+    <%= f.label :council_tax_band %><br>
+    <%= f.text_field :council_tax_band %>
+  </div>
+  <div class="field">
+    <%= f.label :chain_free %><br>
+    <%= f.select :chain_free, [['YES', true],['NO', false]], {include_blank: true} %>
+  </div>
+
+  
   <div class="actions">
     <%= f.submit %>
   </div>

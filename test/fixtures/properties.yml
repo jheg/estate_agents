@@ -5,9 +5,43 @@ one:
   price: 9.99
   bedrooms: 2
   status: MyString
+  description: MyString
+  map_url: MyString
+  floorplan: MyString
+  featured_property: true
+  tenure: 'FREEHOLD'
+  remaining_lease: 50
+  ground_rent: 100
+  service_charge: 900
+  council_tax_band: 'A'
+  chain_free: true
+  property_name_number: 40
+  property_street: MyString
+  property_village: MyString
+  property_town: MyString
+  property_county: MyString
+  property_postcode: MyString
+  property_style: 'DETACHED'
 
 two:
   title: MyString
   price: 9.99
   bedrooms: 2
   status: MyString
+  description: MyString
+  map_url: MyString
+  floorplan: MyString
+  featured_property: true
+  tenure: 'FREEHOLD'
+  remaining_lease: 50
+  ground_rent: 100
+  service_charge: 900
+  council_tax_band: 'A'
+  chain_free: true
+  property_name_number: 40
+  property_street: MyString
+  property_village: MyString
+  property_town: MyString
+  property_county: MyString
+  property_postcode: MyString
+  property_style: 'DETACHED'

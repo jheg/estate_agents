@@ -121,23 +121,23 @@
       <th>Bedrooms</th>
       <th>Price</th>
       <th>Status</th>
-      <th>Map URL</th>
-      <th colspan="5"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @properties.each do |property| %>
-      <tr>
-        <td><%= property.title %></td>
-        <td><%= property.bedrooms %></td>
-        <td><%= property.price %></td>
-        <td><%= property.status %></td>
-        <td><%= property.map_url %></td>
-        <td><%= link_to 'Show', property %></td>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      <% if property.featured_property %>
+        <tr>
+          <td><%= property.title %></td>
+          <td><%= property.bedrooms %></td>
+          <td><%= property.price %></td>
+          <td><%= property.status %></td>
+          <td><%= link_to 'Show', property %></td>
+          <td><%= link_to 'Edit', edit_property_path(property) %></td>
+          <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
