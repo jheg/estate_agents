@@ -1,5 +1,5 @@
 class PropertiesController < ApplicationController
-  before_action :set_property, only: [:show, :edit, :update, :destroy]
+  before_action :set_property, only: [:show, :edit, :update, :destroy, :format_address]
 
 
   # GET /properties
@@ -59,6 +59,16 @@ class PropertiesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to properties_url, notice: 'Property was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  helper_method :format_address
+
+  def format_address
+    if @property.property_village.empty?
+      "#{@property.property_street}, #{@property.property_town}"
+    else 
+      "#{@property.property_street}, #{@property.property_village}"
     end
   end
 
