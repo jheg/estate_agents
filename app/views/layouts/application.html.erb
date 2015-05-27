@@ -14,13 +14,13 @@
   <nav>
     <ul>
       <li>
-        <a href="#">Link1</a>
+        <%= link_to "Home", controller: :welcome, action: :index %>
       </li>
       <li>
-        <a href="#">Link2</a>
+        <%= link_to "Our Team", controller: :team_members, action: :index %>
       </li>
       <li>
-        <a href="#">Link3</a>
+        <%= link_to "Properties For Sale", controller: :properties, action: :index %>
       </li>
     </ul>
   </nav>
@@ -31,30 +31,7 @@
 <footer>
   <div>
     <h2>Meet the team</h2>
-    <section>
-    <h3>Team Member 1</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
-    <section>
-    <h3>Team Member 2</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
-    <section>
-    <h3>Team Member 3</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
-    <section>
-    <h3>Team Member 4</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
-    <section>
-    <h3>Team Member 5</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
-    <section>
-    <h3>Team Member 6</h3>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>  
-    </section>
+    <%= render 'team_members/member', title: "Meet the team" %>
   </div>
   <nav>
     <ul>

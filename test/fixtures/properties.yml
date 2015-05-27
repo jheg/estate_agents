@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-   title: MyString
+  title: MyString
   price: 9.99
+  bedrooms: 2
   status: MyString
 
 two:
-   title: MyString
+  title: MyString
   price: 9.99
+  bedrooms: 2
   status: MyString
