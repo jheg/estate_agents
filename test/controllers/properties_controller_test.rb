@@ -18,7 +18,7 @@ class PropertiesControllerTest < ActionController::TestCase
 
   test "should create property" do
     assert_difference('Property.count') do
-      post :create, property: {  title: @property.title, price: @property.price, bedrooms: @property.bedrooms, status: @property.status, department: @property.department}
+      post :create, property: {  title: @property.title, price: @property.price, bedrooms: @property.bedrooms, status: @property.status }
     end
 
     assert_redirected_to property_path(assigns(:property))

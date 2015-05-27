@@ -5,11 +5,9 @@ one:
   price: 9.99
   bedrooms: 2
   status: MyString
-  department: MyString
 
 two:
   title: MyString
   price: 9.99
   bedrooms: 2
   status: MyString
-  department: MyString
