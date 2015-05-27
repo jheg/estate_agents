@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :team_members
+
   root to: 'properties#index'
 
   resources :properties
