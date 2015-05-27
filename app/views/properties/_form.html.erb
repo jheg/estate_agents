@@ -31,6 +31,10 @@
     <%= f.label :map_url %><br>
     <%= f.text_field :map_url %>
   </div>
+  <div class="field">
+    <%= f.label :department %><br>
+    <%= f.select(:department, options_for_select([['SALES', 'SALES'],['LETTINGS', 'LETTINGS']]), {include_blank: true}) %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
