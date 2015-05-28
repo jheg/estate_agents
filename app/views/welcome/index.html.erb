@@ -141,7 +141,31 @@
     <% end %>
   </tbody>
 </table>
-
+<h2>Recently added properties</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Bedrooms</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @latest_properties.each do |property| %>
+    <tr>
+      <td><%= property.title %></td>
+      <td><%= property.bedrooms %></td>
+      <td><%= property.price %></td>
+      <td><%= property.status %></td>
+      <td><%= link_to 'Show', property %></td>
+      <td><%= link_to 'Edit', edit_property_path(property) %></td>
+      <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table> 
 <br>
 
 <%= link_to 'New Property', new_property_path %>
